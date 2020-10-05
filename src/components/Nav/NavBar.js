@@ -6,10 +6,12 @@ import { Link } from "gatsby"
 const NavBar = () => {
   return (
     <>
-      <Hamburger />
-      <nav className="nav nav__menu">
-        <figure>Oliver Ballon</figure>
-      </nav>
+      <div className="container__nav">
+        <div className="nav__menu">
+          <p className="logo"> oliver ballon</p>
+          <Hamburger className="hamburger" />
+        </div>
+      </div>
     </>
   )
 }
