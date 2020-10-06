@@ -13,4 +13,10 @@ ul {
 
 a {
   text-decoration: none;
+  &active {
+    color: black;
+  }
+  &visited {
+    color: black;
+  }
 }

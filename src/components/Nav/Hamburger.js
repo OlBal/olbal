@@ -9,16 +9,15 @@ const MenuIcon = styled.button`
   width: 1.8rem;
   height: 2rem;
   background: transparent;
-  border-radius: 0.2rem;
   border: none;
   cursor: pointer;
   align-items: center;
 
   div {
-    width: 1.8rem;
+    width: 2rem;
     height: 0.2rem;
     background: black;
-    transform-origin: 0;
+    transform-origin: 5%;
     position: relative;
     transition: opacity 300ms, transform 300ms;
 

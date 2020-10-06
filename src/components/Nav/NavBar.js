@@ -8,7 +8,9 @@ const NavBar = () => {
     <>
       <div className="container__nav">
         <div className="nav__menu">
-          <p className="logo"> oliver ballon</p>
+          <Link to="/">
+            <p className="logo"> oliver ballon</p>
+          </Link>
           <Hamburger className="hamburger" />
         </div>
       </div>
