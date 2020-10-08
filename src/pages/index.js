@@ -1,11 +1,29 @@
 import React from "react"
 import "../styles/styles.scss"
-import NavBar from "../components/Nav/NavBar"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout/Layout"
+import Hero from "../components/Hero/Hero"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
-      <NavBar />
+      <Layout>
+        <Hero content={data.hero.edges} />
+      </Layout>
     </>
   )
 }
+export const pageQuery = graphql`
+  {
+    hero: allMdx(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
+      edges {
+        node {
+          body
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`

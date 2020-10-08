@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "gangster-reg", sans-serif;
+  src: url("../assets/fonts/gangster-reg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gangster-bold", sans-serif;
+  src: url("../assets/fonts/gangster-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gangster-light", sans-serif;
+  src: url("../assets/fonts/gangster-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "canvas", serif;
+  src: url("../assets/fonts/canvas.otf") format("otf");
+}
+
+.font-hero {
+  font-family: "gangster-reg", sans-serif;
+  font-size: 5rem;
+}

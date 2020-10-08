@@ -3,14 +3,18 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
 module.exports = {
-  /* Your site config here */
   plugins: [
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        implementation: require("sass"),
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
     },
   ],
