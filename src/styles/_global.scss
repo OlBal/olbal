@@ -9,10 +9,12 @@ body {
 
 ul {
   list-style: none;
+  font-family: "gangster", sans-serif;
 }
 
 a {
   text-decoration: none;
+  font-family: "gangster", sans-serif;
   &active {
     color: black;
   }
@@ -20,3 +22,9 @@ a {
     color: black;
   }
 }
+
+p {
+  font-size: 1rem;
+}
+
+@font-face;

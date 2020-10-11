@@ -11,12 +11,7 @@ const Layout = ({ children }) => {
         p: props => <p {...props} className="mt-4" />,
       }}
     >
-      <div
-        className="min-h-full grid"
-        style={{
-          gridTemplateRows: "auto 1fr auto",
-        }}
-      >
+      <div className="">
         <Header />
         <main>{children}</main>
         <Footer />

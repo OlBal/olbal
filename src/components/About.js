@@ -2,8 +2,6 @@ import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 
-import Img from "gatsby-image"
-
 const About = ({ content }) => {
   const { frontmatter, body } = content[0].node
 
@@ -14,20 +12,16 @@ const About = ({ content }) => {
         <div className="w-1/2">
           <MDXRenderer>{body}</MDXRenderer>
         </div>
-        <div className="w-1/2">
-          <figure className="w-2/3 mx-auto">
-            <Img alt="about" fluid={frontmatter.image.childImageSharp.fluid} />
-            <figurecaption className="text-sm">
-              {frontmatter.caption}
-            </figurecaption>
-          </figure>
-        </div>
       </div>
     </section>
   )
 }
 
-const pageQuery = graphql` about: allMdx(filter: {}) {
+export default About
+
+export const pageQuery = graphql`
+  {
+    about: allMdx(filter: { fileAbsolutePath: { regex: "/about/" } }) {
       edges {
         node {
           body
@@ -43,5 +37,3 @@ const pageQuery = graphql` about: allMdx(filter: {}) {
     }
   }
 `
-
-export default About

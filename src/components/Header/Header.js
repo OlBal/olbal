@@ -6,19 +6,15 @@ const Header = () => {
   const { menu } = navLinks
 
   return (
-    <header className="flex bg items-center justify-between py-6 px-12 ">
+    <header className="header">
       <Link to="/" aria-label="home">
-        <p className="text font-regular">{siteTitle}</p>
+        <p className="">{siteTitle}</p>
       </Link>
 
-      <nav className="flex items-center">
+      <nav className="nav__list-group">
         {menu.map(({ name, url }, key) => {
           return (
-            <Link
-              className="text font-regular px-3 py-9 rounded "
-              key={key}
-              to={url}
-            >
+            <Link className="nav__list-item " key={key} to={url}>
               {name}
             </Link>
           )
