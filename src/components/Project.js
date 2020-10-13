@@ -9,24 +9,22 @@ const Project = ({ content }) => {
         const { body, frontmatter } = project.node
         return (
           <div className="project__container">
-            <div className="project__text__container">
-              <div className="" key={frontmatter.position}>
-                <div className="">
-                  <h1 className="">{frontmatter.category}</h1>
-                  <h2 className="">{frontmatter.title}</h2>
-                  <div>
-                    <MDXRenderer>{body}</MDXRenderer>
-                    <div className="">
-                      {frontmatter.tags.map((tag, key) => {
-                        return <p className="mr-2 mt-6">{tag}</p>
-                      })}
-                    </div>
-                  </div>
-                </div>
+            <div class="project__text__container" key={frontmatter.position}>
+              <h2 className="project__title">{frontmatter.title}</h2>
+              <div class="project__text__body">
+                <MDXRenderer>{body}</MDXRenderer>
+              </div>
+              <div className="tags">
+                {frontmatter.tags.map((tag, key) => {
+                  return <p className="tag-text">{tag}</p>
+                })}
               </div>
             </div>
+
             <div className="project__image__container">
-              <Img fluid={frontmatter.screenshot.childImageSharp.fluid} />
+              <div style={{ width: "100%" }}>
+                <Img fluid={frontmatter.screenshot.childImageSharp.fluid} />
+              </div>
             </div>
           </div>
         )

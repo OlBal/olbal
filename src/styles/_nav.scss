@@ -1,5 +1,6 @@
 .container__nav {
   padding: 5%;
+  z-index: 1;
 }
 
 .nav__menu {
@@ -12,6 +13,7 @@
 }
 
 .menu-links {
+  font-family: "Recursive", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,17 +35,4 @@
       color: #6ab4ff;
     }
   }
-}
-
-.nav__list-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  display: inline-block;
-  padding: 0;
-}
-
-.nav__list-item {
-  border-left: black 1px solid;
-  padding: 0 1rem 0 1rem;
 }

@@ -1,0 +1,67 @@
+.project__wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  background: $col-bg;
+  height: 80vh;
+  overflow: hidden;
+  padding: 2rem 2rem;
+}
+
+.project__image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  -webkit-box-shadow: 22px 31px 37px -37px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 31px 37px -37px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 31px 37px -37px rgba(0, 0, 0, 0.75);
+}
+
+.project__text__container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 30%;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.project__title {
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: $col-text;
+}
+
+.project__text__body {
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  line-height: 1.2rem;
+  text-align: left;
+  padding: 1rem 0 1rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: left;
+  width: 40%;
+  text-align: left;
+}
+
+.tag-text {
+  font-family: "Recursive", sans-serif;
+  font-weight: 500;
+}

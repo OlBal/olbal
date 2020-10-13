@@ -3,7 +3,6 @@ import "../styles/styles.scss"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Hero from "../components/Hero/Hero"
-import About from "../components/About"
 import Project from "../components/Project"
 
 export default function Home({ data }) {
@@ -11,7 +10,7 @@ export default function Home({ data }) {
     <>
       <Layout>
         <Hero content={data.hero.edges} />
-        <About content={data.about.edges} />
+        {/* <About content={data.about.edges} /> */}
         <Project content={data.project.edges} />
       </Layout>
     </>
@@ -19,6 +18,21 @@ export default function Home({ data }) {
 }
 export const pageQuery = graphql`
   {
+    about: allMdx(filter: { fileAbsolutePath: { regex: "/about/" } }) {
+      edges {
+        node {
+          body
+          frontmatter {
+            title
+            caption
+            image {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+
     hero: allMdx(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
       edges {
         node {
@@ -54,21 +68,6 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-          }
-        }
-      }
-    }
-
-    about: allMdx(filter: { fileAbsolutePath: { regex: "/about/" } }) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-            caption
-            image {
-              publicURL
             }
           }
         }
