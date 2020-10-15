@@ -15,9 +15,10 @@
 
 .hero__font {
   font-family: "Recursive", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: $col-bg;
+  padding-bottom: 1.5rem;
 }
 
 .contact__links {
@@ -25,7 +26,12 @@
 }
 
 .contact__container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 40%;
   align-self: center;
+  border-left: 6px solid black;
 }
 
 .contact__link {
@@ -38,5 +44,5 @@
 }
 
 .contact__link:hover {
-  color: white;
+  color: rgb(200, 240, 255);
 }

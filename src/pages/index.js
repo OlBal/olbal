@@ -4,13 +4,16 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Hero from "../components/Hero/Hero"
 import Project from "../components/Project"
+import About from "../components/About"
 
 export default function Home({ data }) {
   return (
     <>
       <Layout>
         <Hero content={data.hero.edges} />
-        {/* <About content={data.about.edges} /> */}
+
+        <About content={data.about.edges} />
+
         <Project content={data.project.edges} />
       </Layout>
     </>
@@ -59,7 +62,6 @@ export const pageQuery = graphql`
             visible
             tags
             position
-            github
             external
             category
             screenshot {

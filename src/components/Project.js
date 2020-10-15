@@ -14,6 +14,9 @@ const Project = ({ content }) => {
               <div class="project__text__body">
                 <MDXRenderer>{body}</MDXRenderer>
               </div>
+              <a href={frontmatter.external} className="project__link">
+                Link to project
+              </a>
               <div className="tags">
                 {frontmatter.tags.map((tag, key) => {
                   return <p className="tag-text">{tag}</p>

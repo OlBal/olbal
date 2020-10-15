@@ -1,0 +1,33 @@
+.icon__link {
+  align-self: center;
+  color: $col-links;
+}
+.icon__link:hover {
+  fill: $col-bg;
+}
+
+.icon__container {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.icon {
+  height: 120%;
+  width: 120%;
+}
+
+.icon-stack {
+  height: 5%;
+  width: 5%;
+  fill: $col-bg !important;
+}
+
+.icon-stack__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
