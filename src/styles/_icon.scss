@@ -1,6 +1,7 @@
 .icon__link {
   align-self: center;
   color: $col-links;
+  padding-right: 2rem;
 }
 .icon__link:hover {
   fill: $col-bg;
@@ -9,10 +10,10 @@
 .icon__container {
   align-self: center;
   display: flex;
-  width: 20%;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  padding-left: 1rem;
+  padding-right: 5rem;
 }
 
 .icon {
@@ -21,8 +22,8 @@
 }
 
 .icon-stack {
-  height: 60%;
-  width: 60%;
+  height: 80%;
+  width: 80%;
   fill: $col-bg;
   padding: 0.5rem;
   &:hover {

@@ -37,12 +37,6 @@ module.exports = {
       },
 
       {
-        name: "projects",
-
-        url: "/projects",
-      },
-
-      {
         name: "contact",
 
         url: "/contact",

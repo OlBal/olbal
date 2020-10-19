@@ -13,9 +13,18 @@ const Nav = () => {
       <header>
         <div className="container__nav">
           <div className="nav__menu">
-            <Link to="/">
-              <p className="logo"> Oliver Ballon</p>
-            </Link>
+            <nav className="nav">
+              {menu.map(({ name, url }, key) => {
+                return (
+                  <Link className="nav__item" key={key} to={url}>
+                    {name}
+                  </Link>
+                )
+              })}
+              <Link to="/">
+                <p className="logo"> Oliver Ballon</p>
+              </Link>
+            </nav>
             <div className="icon__container">
               <a
                 href="http://www.twitter.com/not_wavving"
@@ -30,15 +39,6 @@ const Nav = () => {
                 <Email className="icon" />
               </a>
             </div>
-            <nav className="">
-              {menu.map(({ name, url }, key) => {
-                return (
-                  <Link className="nav__item" key={key} to={url}>
-                    {name}
-                  </Link>
-                )
-              })}
-            </nav>
           </div>
         </div>
       </header>

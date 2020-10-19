@@ -1,7 +1,3 @@
-.nav__item {
-  margin-right: 3rem;
-}
-
 .nav__menu {
   background: #f3e9e2;
   display: flex;
@@ -10,4 +6,13 @@
   flex-direction: row;
   width: 100vw;
   padding: 1rem;
+}
+
+.nav {
+  display: inline;
+  padding-left: 2rem;
+}
+
+.nav__item {
+  padding-right: rem;
 }
