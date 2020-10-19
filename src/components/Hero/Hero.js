@@ -1,33 +1,30 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
+import Pointer from "../../assets/icons/pointer.svg"
 
 const Hero = ({ content }) => {
   const { frontmatter } = content[0].node
-
   return (
     <>
       <section class="hero__container">
         <div class="hero__text__container">
           <h1 className="hero__text hero__font">
             {frontmatter.title}
-            To discuss any projects or just to say hi{" "}
-            <span class="contact__link">
-              <a href="mailto:oliverballon1@gmail.com">please get in contact</a>
-            </span>
+            &nbsp;To discuss a project or just say hi
+            <a class="contact__link" href="mailto:oliverballon1@gmail.com">
+              &nbsp;please get in contact.
+            </a>
           </h1>
-        </div>
-        <div class="contact__container">
-          <div class="contact__links">
-            <ul>
-              <li>
-                <a href="mailto:oliverballon1@gmail.com">Email</a>
-              </li>
-              <li>
-                <a href="https://github.com/olbal">GitHub</a>
-              </li>
-              <li>
-                <a href="http://www.twitter.com/not_wavving">Twitter</a>
-              </li>
-            </ul>
+          <div className="project__scroll">
+            <p className="scroll" onClick={() => scrollTo("#projectone")}>
+              Get To The Good Bit
+            </p>
+            <div
+              className="pointer__container"
+              onClick={() => scrollTo("#projectone")}
+            >
+              <Pointer />
+            </div>
           </div>
         </div>
       </section>

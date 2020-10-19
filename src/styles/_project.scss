@@ -50,6 +50,7 @@
   line-height: 1.2rem;
   text-align: left;
   padding: 1rem 0 1rem 0;
+  color: $col-text;
 }
 
 .tags {
@@ -57,11 +58,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: left;
-  width: 40%;
+  width: 70%;
   text-align: left;
 }
 
 .tag-text {
   font-family: "Recursive", sans-serif;
   font-weight: 500;
+  color: $col-text;
 }

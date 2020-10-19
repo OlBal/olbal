@@ -8,12 +8,15 @@ const Project = ({ content }) => {
       {content.map((project, key) => {
         const { body, frontmatter } = project.node
         return (
-          <div className="project__container">
+          <div id="projectone" className="project__container">
             <div class="project__text__container" key={frontmatter.position}>
               <h2 className="project__title">{frontmatter.title}</h2>
               <div class="project__text__body">
                 <MDXRenderer>{body}</MDXRenderer>
               </div>
+              <a href={frontmatter.external} className="project__link">
+                Link to project
+              </a>
               <div className="tags">
                 {frontmatter.tags.map((tag, key) => {
                   return <p className="tag-text">{tag}</p>

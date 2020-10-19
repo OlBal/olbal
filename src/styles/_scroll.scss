@@ -1,0 +1,10 @@
+.scroll {
+  font-size: 2rem;
+  background: none;
+  font-family: $font;
+  justify-self: center;
+  &:hover {
+    color: $col-bg;
+    cursor: pointer;
+  }
+}

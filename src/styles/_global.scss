@@ -4,6 +4,10 @@
   overflow: visible;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 ul {
   list-style: none;
   font-family: "Recursive", sans-serif;

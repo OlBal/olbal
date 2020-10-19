@@ -10,7 +10,6 @@ export default function Home({ data }) {
     <>
       <Layout>
         <Hero content={data.hero.edges} />
-        {/* <About content={data.about.edges} /> */}
         <Project content={data.project.edges} />
       </Layout>
     </>
@@ -18,32 +17,6 @@ export default function Home({ data }) {
 }
 export const pageQuery = graphql`
   {
-    about: allMdx(filter: { fileAbsolutePath: { regex: "/about/" } }) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-            caption
-            image {
-              publicURL
-            }
-          }
-        }
-      }
-    }
-
-    hero: allMdx(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-
     project: allMdx(
       filter: {
         fileAbsolutePath: { regex: "/project/" }
@@ -59,7 +32,6 @@ export const pageQuery = graphql`
             visible
             tags
             position
-            github
             external
             category
             screenshot {
@@ -69,6 +41,17 @@ export const pageQuery = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    hero: allMdx(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
+      edges {
+        node {
+          body
+          frontmatter {
+            title
           }
         }
       }
