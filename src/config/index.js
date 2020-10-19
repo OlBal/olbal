@@ -3,8 +3,6 @@ module.exports = {
 
   siteTitle: "oliver ballon",
 
-  siteShortTitle: "ob",
-
   siteDescription:
     "A portfolio of work by Oliver Ballon, a developer in Bristol",
 
@@ -35,19 +33,19 @@ module.exports = {
       {
         name: "about",
 
-        url: "/#about",
+        url: "/about",
       },
 
       {
         name: "projects",
 
-        url: "/#projects",
+        url: "/projects",
       },
 
       {
         name: "contact",
 
-        url: "/#contact",
+        url: "/contact",
       },
     ],
   },

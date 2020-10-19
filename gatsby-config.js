@@ -5,11 +5,12 @@
  */
 module.exports = {
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-mdx`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,6 +24,20 @@ module.exports = {
         rule: {
           include: /assets/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            // for inline blog images
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 880,
+            },
+          },
+        ],
       },
     },
   ],
