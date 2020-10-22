@@ -5,6 +5,14 @@
  */
 module.exports = {
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
@@ -32,14 +40,6 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/,
-        },
       },
     },
   ],

@@ -1,0 +1,28 @@
+.container__footer {
+  background: $col-bg;
+  padding: 0.25rem;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  margin: 0 2rem 0 2rem;
+  align-items: center;
+}
+
+.copyright {
+  display: block;
+  font-family: $font;
+  font-size: 0.5rem;
+}
+
+.footer__icon__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__icon {
+  width: 75%;
+}

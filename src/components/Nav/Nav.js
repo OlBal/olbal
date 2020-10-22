@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { navLinks } from "../../config"
-import Twitter from "../../assets/icons/iconmonstr-twitter-1.svg"
+import Twitter from "../../assets/icons/twitter.svg"
 import Github from "../../assets/icons/iconmonstr-github-1.svg"
 import Email from "../../assets/icons/iconmonstr-email-4.svg"
 

@@ -1,8 +1,6 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
-// import oliver from "../assets/img/oliver.jpg"
-import IconStack from "./IconStack"
 const About = ({ content }) => {
   const { frontmatter, body } = content[0].node
 
@@ -146,8 +144,6 @@ const About = ({ content }) => {
                 </p>
               </div>
             </div>
-
-            {/* <IconStack /> */}
           </section>
         </div>
       </div>
@@ -156,7 +152,3 @@ const About = ({ content }) => {
 }
 
 export default About
-
-{
-  /* <text x="0" y="5000015" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by abeldb</text><text x="0" y="5000020" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text> */
-}

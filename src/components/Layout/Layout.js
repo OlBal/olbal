@@ -3,19 +3,22 @@ import PropTypes from "prop-types"
 import { MDXProvider } from "@mdx-js/react"
 import { Helmet } from "react-helmet"
 import Nav from "../Nav/Nav"
+import Footer from "../Footer"
 const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
         <title>Oliver Ballon's Portfolio</title>
       </Helmet>
-      <Nav />
+
       <MDXProvider
         components={{
           p: props => <p {...props} className="" />,
         }}
       >
+        <Nav />
         <main className="main">{children}</main>
+        <Footer />
       </MDXProvider>
     </>
   )

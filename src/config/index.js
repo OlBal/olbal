@@ -1,7 +1,7 @@
 module.exports = {
   author: "Oliver Ballon",
 
-  siteTitle: "oliver ballon",
+  siteTitle: "oliver Ballon",
 
   siteDescription:
     "A portfolio of work by Oliver Ballon, a developer in Bristol",
@@ -34,12 +34,6 @@ module.exports = {
         name: "about",
 
         url: "/about",
-      },
-
-      {
-        name: "contact",
-
-        url: "/contact",
       },
     ],
   },
