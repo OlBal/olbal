@@ -33,6 +33,7 @@ export const pageQuery = graphql`
             tags
             position
             external
+            github
             category
             screenshot {
               childImageSharp {
