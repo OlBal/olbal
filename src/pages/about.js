@@ -19,6 +19,15 @@ export const pageQuery = graphql`
       edges {
         node {
           body
+          frontmatter {
+            screenshot {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

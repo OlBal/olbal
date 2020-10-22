@@ -11,6 +11,8 @@ html {
 ul {
   list-style: none;
   font-family: "Recursive", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -33,4 +35,9 @@ p {
 
 h1 h2 h3 h4 h5 h6 {
   font-family: "Recursive", sans-serif;
+}
+
+header {
+  position: sticky;
+  opacity: 90%;
 }

@@ -1,16 +1,15 @@
-.icon__link {
+.icon__link--nav {
   align-self: center;
   color: $col-links;
   padding-right: 2rem;
-}
-.icon__link:hover {
-  fill: $col-bg;
+  &:hover {
+    fill: $col-alt-bg;
+  }
 }
 
 .icon__container {
   align-self: center;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   padding-right: 5rem;

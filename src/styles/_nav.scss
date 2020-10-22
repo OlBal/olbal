@@ -1,18 +1,21 @@
-.nav__menu {
-  background: #f3e9e2;
+.container__nav {
+}
+nav {
+  padding: 0.5rem;
+  width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 100vw;
-  padding: 1rem;
+  background: $col-bg;
 }
-
-.nav {
-  display: inline;
-  padding-left: 2rem;
+.nav__list {
+  align-self: center;
 }
-
 .nav__item {
-  padding-right: rem;
+  display: inline-block;
+  padding: 0 2rem 0 2rem;
+}
+
+.logo .nav-link:hover {
+  color: $col-alt-bg;
 }

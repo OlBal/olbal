@@ -10,35 +10,47 @@ const Nav = () => {
 
   return (
     <>
-      <header>
+      <header style={{ zIndex: "10" }}>
         <div className="container__nav">
           <div className="nav__menu">
-            <nav className="nav">
-              {menu.map(({ name, url }, key) => {
-                return (
-                  <Link className="nav__item" key={key} to={url}>
-                    {name}
+            <nav>
+              <ul className="nav__list">
+                <li className="nav__item">
+                  <Link className="logo" to="/">
+                    <p> Oliver Ballon</p>
                   </Link>
-                )
-              })}
-              <Link to="/">
-                <p className="logo"> Oliver Ballon</p>
-              </Link>
+                </li>
+                {menu.map(({ name, url }, key) => {
+                  return (
+                    <li className="nav__item">
+                      <Link className="nav-link" key={key} to={url}>
+                        {name}
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+              <div className="icon__container">
+                <a
+                  href="http://www.twitter.com/not_wavving"
+                  className="icon__link--nav"
+                >
+                  <Twitter className="icon" />
+                </a>
+                <a
+                  href="http://www.github.com/olbal"
+                  className="icon__link--nav"
+                >
+                  <Github className="icon" />
+                </a>
+                <a
+                  href="mailto:oliverballon1@gmail.com"
+                  className="icon__link--nav"
+                >
+                  <Email className="icon" />
+                </a>
+              </div>
             </nav>
-            <div className="icon__container">
-              <a
-                href="http://www.twitter.com/not_wavving"
-                className="icon__link"
-              >
-                <Twitter className="icon" />
-              </a>
-              <a href="http://www.github.com/olbal" className="icon__link">
-                <Github className="icon" />
-              </a>
-              <a href="mailto:oliverballon1@gmail.com" className="icon__link">
-                <Email className="icon" />
-              </a>
-            </div>
           </div>
         </div>
       </header>

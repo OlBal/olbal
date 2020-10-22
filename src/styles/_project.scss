@@ -67,3 +67,12 @@
   font-weight: 500;
   color: $col-text;
 }
+
+.project__image {
+  border-radius: 0.5rem;
+}
+
+.external-arrow {
+  fill: $col-links;
+  stroke: 6px;
+}

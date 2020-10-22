@@ -1,19 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { MDXProvider } from "@mdx-js/react"
+import { Helmet } from "react-helmet"
 import Nav from "../Nav/Nav"
 const Layout = ({ children }) => {
   return (
-    <MDXProvider
-      components={{
-        p: props => <p {...props} className="" />,
-      }}
-    >
-      <div className="">
-        <Nav />
-        <main>{children}</main>
-      </div>
-    </MDXProvider>
+    <>
+      <Helmet>
+        <title>Oliver Ballon's Portfolio</title>
+      </Helmet>
+      <Nav />
+      <MDXProvider
+        components={{
+          p: props => <p {...props} className="" />,
+        }}
+      >
+        <main className="main">{children}</main>
+      </MDXProvider>
+    </>
   )
 }
 

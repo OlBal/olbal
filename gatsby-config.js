@@ -5,6 +5,13 @@
  */
 module.exports = {
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -19,12 +26,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-mdx`,
-    `gatsby-plugin-smoothscroll`,
 
     {
       resolve: `gatsby-source-filesystem`,

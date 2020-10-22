@@ -36,7 +36,7 @@ export const pageQuery = graphql`
             category
             screenshot {
               childImageSharp {
-                fluid {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
