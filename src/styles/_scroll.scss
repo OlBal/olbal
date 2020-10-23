@@ -3,6 +3,8 @@
   background: none;
   font-family: $font;
   justify-self: center;
+  border: none;
+  width: auto;
   &:hover {
     color: $col-bg;
     cursor: pointer;

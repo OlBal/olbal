@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <>
-      <header style={{ zIndex: "10" }}>
+      <header>
         <div className="container__nav">
           <div className="nav__menu">
             <nav>

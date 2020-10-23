@@ -20,9 +20,9 @@ const Hero = ({ content }) => {
             </a>
           </h1>
           <div className="project__scroll">
-            <p className="scroll" onClick={() => scrollTo("#project")}>
+            <button className="scroll" onClick={() => scrollTo("#project")}>
               Get To The Good Bit
-            </p>
+            </button>
             <div
               className="pointer__container"
               onClick={() => scrollTo("#project")}
