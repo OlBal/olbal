@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
       <MDXProvider
         components={{
-          p: props => <p {...props} className="" />,
+          p: props => <p {...props} />,
         }}
       >
         <Nav />
