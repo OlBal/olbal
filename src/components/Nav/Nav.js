@@ -29,6 +29,7 @@ const Nav = () => {
                 )
               })}
             </ul>
+
             <div className="icon__container">
               <a
                 href="http://www.twitter.com/not_wavving"
