@@ -5,6 +5,8 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   background: $col-bg;
+  position: fixed;
+  overflow: hidden;
 }
 .nav__list {
   align-self: center;
