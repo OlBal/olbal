@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 module.exports = {
-  pathPrefix: "/olbal",
   plugins: [
     {
       resolve: "gatsby-plugin-react-svg",
