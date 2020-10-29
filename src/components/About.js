@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 const About = ({ content }) => {
@@ -33,6 +34,15 @@ const About = ({ content }) => {
                   </strong>
                 </figcaption>
                 <ul>
+                  <li>
+                    <a
+                      rel="noopener noreferrer"
+                      href={withPrefix("/OliverBallonCV.pdf")}
+                      target="_blank"
+                    >
+                      My CV (pdf)
+                    </a>
+                  </li>
                   <li>
                     <a href="mailto:oliverballon1@gmail.com">
                       oliverballon1@gmail.com

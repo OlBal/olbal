@@ -25,7 +25,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            // for inline blog images
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 880,

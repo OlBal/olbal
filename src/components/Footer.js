@@ -1,5 +1,5 @@
 import React from "react"
-
+import { withPrefix } from "gatsby"
 import Twitter from "../assets/icons/twitter.svg"
 import Github from "../assets/icons/iconmonstr-github-1.svg"
 import Email from "../assets/icons/iconmonstr-email-4.svg"
@@ -11,6 +11,14 @@ const Footer = () => {
         <div className="container__footer">
           <div className="footer__menu">
             <div className="footer__icon__container">
+              <a
+                className="nav__item"
+                rel="noopener noreferrer"
+                href={withPrefix("/OliverBallonCV.pdf")}
+                target="_blank"
+              >
+                CV
+              </a>
               <a
                 href="http://www.twitter.com/not_wavving"
                 className="icon__link--nav"
