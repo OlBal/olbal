@@ -14,7 +14,7 @@ const Hero = ({ content }) => {
             <a class="contact__link" href="/about">
               about me. &nbsp;
             </a>
-            Or to discuss a project or just say hi
+            To discuss a project or just say hi
             <a class="contact__link" href="mailto:oliverballon1@gmail.com">
               &nbsp;please get in contact.
             </a>
